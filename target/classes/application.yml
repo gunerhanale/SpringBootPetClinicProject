@@ -1,0 +1,6 @@
+logging:
+  level:
+    org.springframework.web: debug
+    org.springframework.jdbc.datasoruce: debug
+    org.springframework.security: debug
+  file: petclinic.log

@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: com.javaegitimleri.petclinic.dao.OwnerRepositoryTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 35.791 s <<< FAILURE! - in com.javaegitimleri.petclinic.dao.OwnerRepositoryTests
+testCreateOwner(com.javaegitimleri.petclinic.dao.OwnerRepositoryTests)  Time elapsed: 0.731 s  <<< ERROR!
+java.lang.Exception: Unexpected exception, expected<javax.persistence.PersistenceException> but was<javax.validation.ConstraintViolationException>
+	at com.javaegitimleri.petclinic.dao.OwnerRepositoryTests.testCreateOwner(OwnerRepositoryTests.java:39)
+
