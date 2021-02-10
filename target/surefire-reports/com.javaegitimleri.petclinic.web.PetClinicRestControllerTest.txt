@@ -1,31 +1,40 @@
 -------------------------------------------------------------------------------
 Test set: com.javaegitimleri.petclinic.web.PetClinicRestControllerTest
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 3, Errors: 1, Skipped: 0, Time elapsed: 10.232 s <<< FAILURE! - in com.javaegitimleri.petclinic.web.PetClinicRestControllerTest
-testUpdateOwner(com.javaegitimleri.petclinic.web.PetClinicRestControllerTest)  Time elapsed: 1.317 s  <<< FAILURE!
-java.lang.AssertionError: 
+Tests run: 6, Failures: 0, Errors: 6, Skipped: 0, Time elapsed: 6.113 s <<< FAILURE! - in com.javaegitimleri.petclinic.web.PetClinicRestControllerTest
+testDeleteOwner(com.javaegitimleri.petclinic.web.PetClinicRestControllerTest)  Time elapsed: 0.696 s  <<< ERROR!
+org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://localhost:8080/rest/owner/1": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+	at com.javaegitimleri.petclinic.web.PetClinicRestControllerTest.testDeleteOwner(PetClinicRestControllerTest.java:35)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at com.javaegitimleri.petclinic.web.PetClinicRestControllerTest.testDeleteOwner(PetClinicRestControllerTest.java:35)
 
-Expected: "Salim"
-     but: was "Hadi"
-	at com.javaegitimleri.petclinic.web.PetClinicRestControllerTest.testUpdateOwner(PetClinicRestControllerTest.java:48)
+testUpdateOwner(com.javaegitimleri.petclinic.web.PetClinicRestControllerTest)  Time elapsed: 1.214 s  <<< ERROR!
+org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8080/rest/owner/4": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+	at com.javaegitimleri.petclinic.web.PetClinicRestControllerTest.testUpdateOwner(PetClinicRestControllerTest.java:46)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at com.javaegitimleri.petclinic.web.PetClinicRestControllerTest.testUpdateOwner(PetClinicRestControllerTest.java:46)
 
-testGetOwnerByLastName(com.javaegitimleri.petclinic.web.PetClinicRestControllerTest)  Time elapsed: 0.306 s  <<< FAILURE!
-java.lang.AssertionError: 
+testCreateOwner(com.javaegitimleri.petclinic.web.PetClinicRestControllerTest)  Time elapsed: 1.158 s  <<< ERROR!
+org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:8080/rest/owner": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+	at com.javaegitimleri.petclinic.web.PetClinicRestControllerTest.testCreateOwner(PetClinicRestControllerTest.java:65)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at com.javaegitimleri.petclinic.web.PetClinicRestControllerTest.testCreateOwner(PetClinicRestControllerTest.java:65)
 
-Expected: iterable over ["Kenan", "Hümeyra", "Salim"] in any order
-     but: No item matches: "Kenan", "Hümeyra", "Salim" in []
-	at com.javaegitimleri.petclinic.web.PetClinicRestControllerTest.testGetOwnerByLastName(PetClinicRestControllerTest.java:95)
+testGetOwnerByLastName(com.javaegitimleri.petclinic.web.PetClinicRestControllerTest)  Time elapsed: 1.016 s  <<< ERROR!
+org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8080/rest/owner": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+	at com.javaegitimleri.petclinic.web.PetClinicRestControllerTest.testGetOwnerByLastName(PetClinicRestControllerTest.java:87)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at com.javaegitimleri.petclinic.web.PetClinicRestControllerTest.testGetOwnerByLastName(PetClinicRestControllerTest.java:87)
 
-testGetOwnerById(com.javaegitimleri.petclinic.web.PetClinicRestControllerTest)  Time elapsed: 2.002 s  <<< ERROR!
+testGetOwnerById(com.javaegitimleri.petclinic.web.PetClinicRestControllerTest)  Time elapsed: 1.012 s  <<< ERROR!
 org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8085/rest/owner/1": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
 	at com.javaegitimleri.petclinic.web.PetClinicRestControllerTest.testGetOwnerById(PetClinicRestControllerTest.java:76)
 Caused by: java.net.ConnectException: Connection refused: connect
 	at com.javaegitimleri.petclinic.web.PetClinicRestControllerTest.testGetOwnerById(PetClinicRestControllerTest.java:76)
 
-testGetOwners(com.javaegitimleri.petclinic.web.PetClinicRestControllerTest)  Time elapsed: 0.22 s  <<< FAILURE!
-java.lang.AssertionError: 
-
-Expected: iterable over ["Kenan", "Hümeyra", "Salim", "Muammer"] in any order
-     but: Not matched: "Beþir"
-	at com.javaegitimleri.petclinic.web.PetClinicRestControllerTest.testGetOwners(PetClinicRestControllerTest.java:108)
+testGetOwners(com.javaegitimleri.petclinic.web.PetClinicRestControllerTest)  Time elapsed: 1.016 s  <<< ERROR!
+org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8080/rest/owners": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+	at com.javaegitimleri.petclinic.web.PetClinicRestControllerTest.testGetOwners(PetClinicRestControllerTest.java:101)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at com.javaegitimleri.petclinic.web.PetClinicRestControllerTest.testGetOwners(PetClinicRestControllerTest.java:101)
 

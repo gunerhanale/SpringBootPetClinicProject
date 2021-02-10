@@ -1,1 +1,9 @@
+com\javaegitimleri\petclinic\PetClinicIntegrationTests.class
 com\javaegitimleri\petclinic\web\PetClinicRestControllerTest.class
+com\javaegitimleri\petclinic\security\PetClinicSecurityWithoutAuthTokenTests.class
+com\javaegitimleri\petclinic\web\PetClinicRestControllerTests.class
+com\javaegitimleri\petclinic\dao\OwnerRepositoryTests.class
+com\javaegitimleri\petclinic\web\OwnerWebMvcTests.class
+com\javaegitimleri\petclinic\PasswordEncoderTests.class
+com\javaegitimleri\petclinic\security\PetClinicSecurityWithValidAuthTokenTests.class
+com\javaegitimleri\petclinic\security\PetClinicSecurityWithInvalidAuthTokenTests.class
